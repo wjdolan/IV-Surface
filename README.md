@@ -6,7 +6,7 @@
 - Currently supports only American-listed stocks (Yahoo Finance options coverage constraint).
 
 ## Requirements
-- Python 3.9+
+- Python 3.12+ (recommended)
 - Internet access (required for Yahoo Finance data)
 - Dependencies: `yfinance`, `pandas`, `numpy`, `matplotlib`, `streamlit`, `seaborn`, `plotly`
 
@@ -18,9 +18,14 @@
    ```
 
 ## Usage
-Run the Streamlit app:
+Run the Streamlit app (preferred, avoids launcher issues):
 ```bash
-streamlit run main.py
+python -m streamlit run main.py
+```
+
+Or with Make (GNU Make required):
+```bash
+make run
 ```
 In the UI:
 - Enter a ticker (U.S. listed), optionally switch option type (calls/puts).

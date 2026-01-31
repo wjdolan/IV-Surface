@@ -278,6 +278,7 @@ def main():
     #   vol_fig = volatility_curve_graph(options_data, current_price)
     #   st.pyplot(vol_fig)
     #   plt.close(vol_fig)
+    
   except Exception as exc:
     st.error(f"Error loading data for {ticker}: {exc}")
 
